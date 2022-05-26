@@ -1,0 +1,51 @@
+﻿body {
+    font-family: Arial;
+}
+
+input[type=text] {
+    width: 250px;
+}
+
+input[type=submit] {
+    width: 45%;
+}
+
+input[type=reset] {
+    width: 45%;
+}
+
+textarea {
+    width: 250px;
+    height: 75px;
+}
+
+table.form-block td {
+    padding: 3px;
+}
+
+div.status-message {
+    width: 100%;
+    background: gainsboro;
+    color: red;
+}
+
+.readonly-data {
+    border: 1px solid gray;
+}
+
+table.data-view {
+    background: azure;
+}
+
+
+table.data-view td {
+    padding: 3px;
+    border: 1px solid gray;
+}
+
+table.data-view th {
+    background: bisque;
+    color: brown;
+    padding: 3px;
+    border: 1px solid gray;
+}
