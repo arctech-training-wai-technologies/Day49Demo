@@ -11,7 +11,7 @@ namespace Day48Demo.Pages.Departments
 {
 
 
-    public partial class DefaultGridView2
+    public partial class DefaultGridView3
     {
 
         /// <summary>

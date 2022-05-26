@@ -1,15 +1,15 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DefaultGridView2.aspx.cs" Inherits="Day48Demo.Pages.Departments.DefaultGridView2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DefaultGridView3.aspx.cs" Inherits="Day48Demo.Pages.Departments.DefaultGridView3" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Departments - GridView </title>
+    <title>Departments - GridView 3</title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>Show all departments in GridView 2</h1>
+            <h1>Show all departments in GridView 3</h1>
 
             <asp:GridView ID="GridView1" runat="server"
                             DataSourceID="SqlDataSource1"
@@ -17,10 +17,18 @@
                             AllowPaging="True"
                             DataKeyNames="Id">
                 <Columns>
-                    <asp:CommandField
-                        ShowSelectButton="True"
-                        ShowEditButton="True"
-                        ShowDeleteButton="True" />
+                    <asp:TemplateField ShowHeader="False">
+                        <EditItemTemplate>
+                            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Update"></asp:LinkButton>
+                            &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel"></asp:LinkButton>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit"></asp:LinkButton>
+                            &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Select" Text="Select"></asp:LinkButton>
+                            &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete"
+                                                  OnClientClick="return confirm('Are you sure you want to delete this record?');"></asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
             

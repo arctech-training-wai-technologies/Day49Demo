@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Day48Demo.Pages.Departments
 {
-    public partial class DefaultGridView2 : System.Web.UI.Page
+    public partial class DefaultGridView4 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

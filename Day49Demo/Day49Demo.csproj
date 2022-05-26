@@ -72,6 +72,8 @@
     <Content Include="Pages\Departments\Default.aspx" />
     <Content Include="Pages\Departments\DefaultGridView.aspx" />
     <Content Include="Pages\Departments\DefaultGridView2.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView3.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView4.aspx" />
     <Content Include="Pages\Departments\Delete.aspx" />
     <Content Include="Pages\Departments\Update.aspx" />
     <Content Include="Global.asax" />
@@ -106,6 +108,20 @@
     </Compile>
     <Compile Include="Pages\Departments\DefaultGridView2.aspx.designer.cs">
       <DependentUpon>DefaultGridView2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView3.aspx.cs">
+      <DependentUpon>DefaultGridView3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView3.aspx.designer.cs">
+      <DependentUpon>DefaultGridView3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView4.aspx.cs">
+      <DependentUpon>DefaultGridView4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView4.aspx.designer.cs">
+      <DependentUpon>DefaultGridView4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Departments\Delete.aspx.cs">
       <DependentUpon>Delete.aspx</DependentUpon>
