@@ -68,15 +68,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="documents\UserManagement-DbScript.sql" />
+    <Content Include="images\female.png" />
+    <Content Include="images\male.png" />
     <Content Include="Pages\Departments\Create.aspx" />
     <Content Include="Pages\Departments\Default.aspx" />
     <Content Include="Pages\Departments\DefaultGridView.aspx" />
     <Content Include="Pages\Departments\DefaultGridView2.aspx" />
     <Content Include="Pages\Departments\DefaultGridView3.aspx" />
     <Content Include="Pages\Departments\DefaultGridView4.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView6.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView5.aspx" />
     <Content Include="Pages\Departments\Delete.aspx" />
     <Content Include="Pages\Departments\Update.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\Users\Default.aspx" />
     <Content Include="Web.config" />
     <Content Include="www-resources\css\form.css" />
   </ItemGroup>
@@ -123,6 +128,20 @@
     <Compile Include="Pages\Departments\DefaultGridView4.aspx.designer.cs">
       <DependentUpon>DefaultGridView4.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView6.aspx.cs">
+      <DependentUpon>DefaultGridView6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView6.aspx.designer.cs">
+      <DependentUpon>DefaultGridView6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView5.aspx.cs">
+      <DependentUpon>DefaultGridView5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView5.aspx.designer.cs">
+      <DependentUpon>DefaultGridView5.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Departments\Delete.aspx.cs">
       <DependentUpon>Delete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -140,6 +159,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Users\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Users\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -154,7 +180,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Pages\Users\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Day49Demo.Services\Day49Demo.Services.csproj">
